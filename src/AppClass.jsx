@@ -8,7 +8,7 @@ export default class AppClass extends Component {
     return <div className="fourimages">
       <h1>Kalvium gallary (AppClass.jsx)</h1>
       {this.props.imgSrc.map((element) => (
-        <img src={element.img} alt={element.id} className="eachElephant" />
+        <img src={element.img} key={element.id} alt={element.id} className="eachElephant" />
       ))}
     </div>
   }

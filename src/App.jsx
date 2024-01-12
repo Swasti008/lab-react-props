@@ -8,7 +8,7 @@ function App(props) {
   return( <div className="fourimages">
     <h1>{props.name}</h1>
     {dataContainer.map((element) => (
-      <img src={element.img} alt={element.id} className="eachElephant" />
+      <img src={element.img} key={element.id} alt={element.id} className="eachElephant" />
     ))}
   </div>)
 }
