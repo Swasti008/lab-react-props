@@ -1,16 +1,16 @@
 import React from 'react';
-import Data from './components/DataComponent';
 import './App.css';
 
-function App() {
+function App(props) {
   // code here
-  let dataContainer = Data();
-  return <div className="fourimages">
-    <h1>Kalvium gallary (App.jsx)</h1>
+  let dataContainer = props.imgSrc;
+  console.log(dataContainer)
+  return( <div className="fourimages">
+    <h1>{props.name}</h1>
     {dataContainer.map((element) => (
       <img src={element.img} alt={element.id} className="eachElephant" />
     ))}
-  </div>
+  </div>)
 }
 
 export default App;

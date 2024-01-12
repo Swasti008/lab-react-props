@@ -1,6 +1,4 @@
 import elephant from "../images/elephant.jpeg";
-
-function Data(){
   let data = [
     {
       id:1,
@@ -19,10 +17,7 @@ function Data(){
       img:elephant
     }
   ]
-return data;
-
-}
     
 
 
-export default Data;
+export default data;
